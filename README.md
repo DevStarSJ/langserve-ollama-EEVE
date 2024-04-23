@@ -28,11 +28,7 @@ GGUF 파일을 다운로드 받기 위하여 https://huggingface.co/heegyu/EEVE-
 - 심볼릭 링크 설정
   
 ```bash
-huggingface-cli download \
-  heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF \
-  ggml-model-Q5_K_M.gguf \
-  --local-dir 본인의_컴퓨터_다운로드폴더_경로 \
-  --local-dir-use-symlinks False
+huggingface-cli download heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF ggml-model-Q5_K_M.gguf --local-dir ./ollama-modelfile/EEVE-Korean-Instruct-10.8B-v1.0 --local-dir-use-symlinks False
 ```
 
 ### Modelfile
@@ -76,7 +72,7 @@ PARAMETER stop <|im_end|>
 ## Ollama 실행
 
 ```bash
-ollama create EEVE-Korean-10.8B -f EEVE-Korean-Instruct-10.8B-v1.0-GGUF/Modelfile
+ollama create EEVE-Korean-10.8B -f ollama-modelfile/EEVE-Korean-Instruct-10.8B-v1.0/Modelfile-v02
 ```
 
 Ollama 모델 목록

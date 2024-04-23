@@ -21,6 +21,7 @@ langchainhub = "^0.1.15"
 langchain-text-splitters = "^0.0.1"
 httpx-sse = "^0.4.0"
 sentence-transformers = "^2.6.1"
+jupyter = "^1.0.0"
 
 
 [build-system]
