@@ -95,6 +95,11 @@ app 폴더 진입 후
 python server.py
 ```
 
+또는
+```bash
+ uvicorn server:app --port 8000 --reload
+```
+
 ## ngrok 에서 터널링(포트 포워드)
 
 ```bash
